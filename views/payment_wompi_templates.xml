@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="redirect_form">
+        <form t-att-action="api_url" method="GET">
+            <input type="hidden" name="public-key" t-att-value="public_key"/>
+            <input type="hidden" name="currency" t-att-value="currency"/>
+            <input type="hidden" name="amount-in-cents" t-att-value="amount_in_cents"/>
+            <input type="hidden" name="reference" t-att-value="reference"/>
+            <input type="hidden" name="signature:integrity" t-att-value="signature_integrity"/>
+            <input type="hidden" name="redirect-url" t-att-value="redirect_url"/>
+        </form>
+    </template>
+</odoo>

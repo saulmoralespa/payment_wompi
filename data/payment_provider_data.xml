@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="payment_provider_wompi" model="payment.provider">
+        <field name="name">Wompi</field>
+        <field name="display_as">Wompi</field>
+        <field name="image_128" type="base64" file="payment_wompi/static/description/icon.png" />
+        <field name="code">wompi</field>
+        <field name="company_id" ref="base.main_company" />
+        <field name="module_id" ref="base.module_payment_wompi"/>
+        <field name="redirect_form_view_id" ref="redirect_form"/>
+        <field name="wompi_public_key">dummy</field>
+        <field name="wompi_events_key">dummy</field>
+        <field name="wompi_integrity_secret">dummy</field>
+        <field name="pre_msg">
+<![CDATA[
+<p>You will be redirected to the Wompi payment page after clicking on the payment button.</p>
+]]>
+        </field>
+    </record>
+</odoo>
